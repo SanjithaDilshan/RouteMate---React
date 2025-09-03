@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.App-main {
+  flex: 1; /* take remaining space between header & footer */
+  padding: 40px 60px; /* add gap around page content */
+  background-color: #fff;
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

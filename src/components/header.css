@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.logo img {
+  height: 36px;
+  margin-right: 8px;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation .link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navigation .link:hover {
+  color: #007bff; /* blue hover effect */
+}
