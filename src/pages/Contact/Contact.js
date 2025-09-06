@@ -10,12 +10,12 @@ export const Contact = () => {
 
 
   return (
-    <>
+    <main>
       <div className="component">Contact</div>
       <Outlet/>
       <button onClick={handleSubmit}>Submit Form</button>
       
-    </>
+    </main>
   )
 }
 
