@@ -7,6 +7,12 @@ import { ProductDetails } from "./components/ProductDetails";
 import { Contact } from "./components/Contact";
 import { Admin } from "./components/Admin";
 import { PageNotFound } from "./components/PageNotFound";
+import { ContactIn } from "./components/ContactIn";
+import { ContactEu } from "./components/ContactEu";
+import { ContactUs } from "./components/ContactUs";
+
+
+
 import './App.css';
 
 function App() {
@@ -21,7 +27,11 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="products" element={<ProductList/>} />
             <Route path="products/:id" element={<ProductDetails/>} />
-            <Route path="contact" element={<Contact/>} />
+            <Route path="contact" element={<Contact/>} >
+              <Route path="in" element={<ContactIn/>} />
+              <Route path="eu" element={<ContactEu/>} />
+              <Route path="us" element={<ContactUs/>} />
+            </Route>
             <Route path="/admin" element={user ? <Admin  />:<Navigate to="/"/>} />
             <Route path="*" element={<PageNotFound/>} />
         </Routes>

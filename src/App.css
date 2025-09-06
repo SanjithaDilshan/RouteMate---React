@@ -70,10 +70,19 @@ main {
 }
 
 .component {
+  max-width: 960px;              /* match header width */
   width: 100%;
-  display: flex;
-  justify-content: center;
+  margin: 30px auto;             /* center the box */
+  padding: 20px 30px;
+  background: #fff;              /* white background */
+  border-radius: 12px;           /* rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-sizing: border-box;        /* includes padding inside width */
 }
+
 
 .content {
   padding: 20px;
